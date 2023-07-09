@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/apipages/apipage1.dart';
 import 'package:my_app/assignment/assignment.dart';
 import 'package:my_app/extrapage/extrapage.dart';
 import 'package:my_app/extrapage/page1.dart';
@@ -53,12 +54,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           body: const TabBarView(
-            children: [
-              Page1(),
-              Page2(),
-              Text("I'll put the SQUID on you"),
-              Extrapage(),
-            ],
+            children: [Page1(), Page2(), Extrapage(), ApiPage()],
           ),
         ),
       ),
